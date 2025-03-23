@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+  scroll-behavior: smooth;
+} 
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 13px;
+    color: #3a3a3a;
+    background-color: #fff;
+}
+ 
+/*::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+} 
+ 
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 20px;
+}
+   
+::-webkit-scrollbar-thumb {
+  background: #0c4c8a;
+  border-radius: 10px;
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clr,
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+aside,
+article,
+section,
+detail,
+nav,
+figure {
+    position: relative;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+img {
+    border: 0;
+    outline: none;
+    max-width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+input[type="button"] {
+    max-width: 100%;
+}
+
+table {  width: 100%; }
+p { margin: 0; padding: 0; }
+.fltL { float: left; }
+.fltR { float: right !important; }
+.padding_none { padding: 0 !important;}
+.border_none{border:none !important}
+.navbar-toggle {  background-color: #fff !important; }
+.icon-bar { background-color: #000 !important; }
+.p_right0{ padding-right:0px !important }
+.p_left0{ padding-left:0px !important } 
+input[type=date].form-control{ text-transform: uppercase !important; }
+select{cursor: pointer;outline: 0;}
+
+
+/*
+.DesktopLayout{ display:none; }
+.MobileLayout{ display:block; }*/
+
+
+
+.LayoutBox{
+    background: #F4F4F4;
+    min-height: 100vh;
+}
+.LayoutLeft{
+    width: 75%;
+    padding: 20px 20px;
+}
+
+.NameBox{
+    position: relative;
+    margin: 0 0 10px 0;
+}
+.NameBox figure{
+    height: 400px;
+    overflow: hidden;
+    background-color: #000;
+    margin: 0;
+    border-radius: 10px;
+}
+.NameBox figure img{
+    opacity: 0.6;
+}
+.NameBox figcaption{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 20px;
+    min-width: 300px;
+}
+.NameBox figcaption .Icon{
+    display: inline-block;
+    max-width: 120px;
+}
+
+
+
+.NameBox figcaption p{
+    font-weight: 600;
+    color: #000000;
+    font-size: 13px;
+    display: flex;
+    margin: 10px 0 0px 0;
+}
+.NameBox figcaption p span{
+    width: 25px;
+    color: #000000;
+}
+.NameBox figcaption p a{
+    color: #000000;
+}
+.NameBox figcaption p a:hover{
+    text-decoration: underline !important; 
+}
+
+.MenuBox{
+    overflow: auto;
+    position: relative;
+    display: block;
+}
+
+.MenuBox::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+} 
+ 
+.MenuBox::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 20px;
+}
+   
+.MenuBox::-webkit-scrollbar-thumb {
+  background: #0c4c8a;
+  border-radius: 10px;
+}
+
+.MenuBox ul{
+    display: flex;
+    gap: 5px;
+    width: max-content;
+    padding: 10px 0;
+}
+.MenuBox ul li{
+    padding: 5px;
+}
+.MenuBox ul li button{
+    min-width: 120px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 3px 15px 0 rgb(93 72 223 / 8%);
+    border-radius: 10px;
+    padding: 10px 0;
+    display: block;
+}
+.MenuBox ul li button .Icon{
+    display: inline-block;
+    max-width: 30px;
+}
+.MenuBox ul li button .Icon img{}
+.MenuBox ul li button label{
+    margin: 6px 0 0 0;
+    display: block;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
