@@ -201,6 +201,16 @@ select{cursor: pointer;outline: 0;}
 .FoodListArea .FoodNav .FoodNavBody ul li a{display:block;font-size:14px;color:#3e3e3e;font-weight:600;padding:9px 0}
 .FoodListArea .FoodNav .FoodNavBody ul li a span{float:right;width:20px;height:20px;background-color:#0d4d89;text-align:center;color:#fff;line-height:20px;border-radius:50px;font-size:12px}
 .FoodListArea .FoodNav .FoodNavBody ul li a:hover{color:#0d4d89}
+.FoodListArea .FoodNav .FoodNavBody ul li.active a{
+    background-color: #0d4d89;
+    color: #fff;
+    padding: 10px 10px;
+}
+.FoodListArea .FoodNav .FoodNavBody ul li.active a span{
+    background: #fff;
+    color: #0d4d89;
+}
+
 
 .FoodMenuArea{width:calc(100% - 600px);background-color:#fff;padding:15px}
 .FoodMenuArea .FoodMenuBox{margin:0 0 30px 0}
@@ -209,8 +219,10 @@ select{cursor: pointer;outline: 0;}
 .FoodMenuArea .FoodMenuBox .FoodList{display:flex;flex-wrap:wrap;gap:10px}
 
 .MenuBox{width:calc(50% - 5px);border:1px solid #ddd;padding:10px}
-.MenuBox h4{font-size:15px;color:#000;margin:0 0 4px 0}
-.MenuBox p{font-size:13px;line-height:20px;font-weight:500;margin:0 0 10px 0;color:#666}
+.MenuBox article {padding: 0 0 0 55px;}
+.MenuBox article .Icon{position:absolute;top: 0;left: 0;width: 40px;}
+.MenuBox article h4{font-size:15px;color:#000;margin:0 0 4px 0}
+.MenuBox article p{font-size:13px;line-height:20px;font-weight:500;margin:0 0 10px 0;color:#666}
 .MenuBox aside{display:flex;justify-content:space-between;align-items:center}
 .MenuBox aside h6{font-size:14px;color:#0d4d89;font-weight:700}
 .MenuBox aside button{border:1px solid #ddd;padding:7px 15px;background-color:#fff0;font-weight:500;outline:0;border-radius:5px;font-size:12px;color:#383838;letter-spacing:.5px;font-family:Roboto}
