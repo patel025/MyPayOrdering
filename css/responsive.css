@@ -1,8 +1,50 @@
-@media screen and  (min-width: 900px) {
+@media all and (max-width: 992px) {
+    
 
-/*    .DesktopLayout{ display:block; }
-    .MobileLayout{ display:none; }
-*/
-}   
- 
- 
+
+}
+
+@media all and (max-width: 600px) {
+
+    .RestaurantArea{ padding:20px }
+    .RestaurantArea .RestaurantBox{ flex-wrap:wrap; }
+    .RestaurantArea .RestaurantBox figure{ width:100% }
+    .RestaurantArea .RestaurantBox figure img{max-height: 150px; }
+    .RestaurantArea .RestaurantBox article{ width:100% }
+    .RestaurantArea .RestaurantBox article p{ margin:0 30px 15px 0 }
+    .RestaurantArea .RestaurantBox article h6{ margin:0 }
+    .RestaurantArea .RestaurantBox aside{ width:100% }
+
+    .FoodListArea{ padding:20px }
+
+    body.show { overflow:hidden; }
+    body.show .FoodCheckout{ transform: translate(0%, 0px); z-index:9 }
+
+
+    .FoodListArea .FoodContainer{ display:block; }
+    .FoodListArea .FoodNav {width: 100%;position: relative;margin: 0 0 20px 0;top: 0;}
+    .FoodListArea .FoodNav .FoodNavHead{ padding:15px }
+    .FoodListArea .FoodNav .FoodNavBody{ display:none; }
+    .FoodListArea .FoodNav.MenuShow .FoodNavBody{ display:block; padding-top:0px }
+        
+    .FoodMenuArea{ width:100% }
+    .MenuBox{ width:100% }
+    .FoodCheckout{ top: 0; position: fixed;  width: 100%; right: 0; transform: translate(100%, 0px); height:100vh; overflow:auto; }
+    .CheckoutMenu ul li{ justify-content: space-between; }
+
+    footer .FooterArea{ padding:40px 20px }
+    footer .FooterArea .Footers{ display:block; }
+    footer .FooterArea .Footers .Foots{ width:100%; }
+    footer .FooterArea .Footers .Foots+.Foots{ margin:30px 0 0 0 }
+
+    .BasketBox{ display:block; }
+
+
+    .CheckoutBox{ width:100% }
+    .PersonalBox .CheckoutForm{ display:block; }
+    .PersonalBox .CheckoutForm .FormBox{ width:100%; margin:0 0 20px 0 }
+    .PickupTime .PickupBox{ width:100% }
+
+
+
+}

@@ -37,6 +37,7 @@ body {
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .clearfix {
@@ -128,120 +129,180 @@ p { margin: 0; padding: 0; }
 input[type=date].form-control{ text-transform: uppercase !important; }
 select{cursor: pointer;outline: 0;}
 
+.RestaurantArea{padding:20px 0 25px}
+.RestaurantArea .RestaurantBox{max-width:1200px;margin:0 auto;display:flex;gap:15px;align-items:center}
+.RestaurantArea .RestaurantBox .RestaurantImage{width:220px;line-height:0;overflow:hidden;border-radius:10px}
+.RestaurantArea .RestaurantBox .RestaurantImage img{max-height:170px;width:100%;object-fit:cover}
 
-/*
-.DesktopLayout{ display:none; }
-.MobileLayout{ display:block; }*/
-
-
-
-.LayoutBox{
-    background: #F4F4F4;
-    min-height: 100vh;
-}
-.LayoutLeft{
-    width: 75%;
-    padding: 20px 20px;
-}
-
-.NameBox{
-    position: relative;
-    margin: 0 0 10px 0;
-}
-.NameBox figure{
-    height: 400px;
-    overflow: hidden;
-    background-color: #000;
-    margin: 0;
-    border-radius: 10px;
-}
-.NameBox figure img{
-    opacity: 0.6;
-}
-.NameBox figcaption{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 10px 20px;
-    min-width: 300px;
-}
-.NameBox figcaption .Icon{
-    display: inline-block;
-    max-width: 120px;
-}
+.RestaurantArea .RestaurantBox .RestaurantInfo{width:calc(100% - 220px);display:flex;justify-content:space-between;gap:15px}
+.RestaurantArea .RestaurantBox .RestaurantInfo article{width:50%}
+.RestaurantArea .RestaurantBox .RestaurantInfo article h3{color:#000;font-size:24px;margin:0 0 10px 0;font-weight:800}
+.RestaurantArea .RestaurantBox .RestaurantInfo article h4{margin:0 0 10px 0;font-size:15px}
+.RestaurantArea .RestaurantBox .RestaurantInfo article h4 span{color:#2e2e2e}
+.RestaurantArea .RestaurantBox .RestaurantInfo article p{display:inline-block;margin:0 30px 0 0;font-size:15px;font-weight:600;color:#555}
+.RestaurantArea .RestaurantBox .RestaurantInfo article h6{font-size:16px;margin:10px 0 0 0}
+.RestaurantArea .RestaurantBox .RestaurantInfo article h6.Green{color:#16a50d}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside{width:50%}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ol{margin: 0 0 15px;display: flex;}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ol li{display: inline-block;}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ol li button{outline: 0;background-color: #dddddd;min-width: 125px;padding: 10px 0;border: none;font-size: 13px;font-weight: 500;color: #404040;font-family: Poppins;cursor: pointer;}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ol li button.active{background: #0d4d89;color: #fff;}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ul li{display:inline-block;position:relative;padding:0 0 0 50px;margin:0 25px 20px 0}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ul li span{position:absolute;top:0;left:0;width:40px;height:40px;border:1px solid #ddd;border-radius:50%;padding:5px}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ul li h6{font-size:14px;color:#000;font-weight:700}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside ul li p{color:#666565;font-weight:700;margin:0 0 3px 0;font-size:12px}
+.RestaurantArea .RestaurantBox .RestaurantInfo aside h3{background-color:#0d4d89;padding:10px 20px;border-radius:5px;color:#fff;font-size:18px;font-weight:600}
 
 
+.RestaurantArea{padding:20px 0 25px}
+.RestaurantArea .RestaurantBox{max-width:1200px;margin:0 auto;display:flex;gap:15px;align-items:center}
+.RestaurantArea .RestaurantBox figure{width:220px;line-height:0;overflow:hidden;border-radius:10px}
+.RestaurantArea .RestaurantBox figure img{max-height:170px;width:100%;object-fit:cover}
 
-.NameBox figcaption p{
-    font-weight: 600;
-    color: #000000;
-    font-size: 13px;
-    display: flex;
-    margin: 10px 0 0px 0;
+/*.RestaurantArea .RestaurantBox {width:calc(100% - 220px);display:flex;justify-content:space-between;gap:15px}*/
+.RestaurantArea .RestaurantBox  article{
+    width: calc(50% - 125px);
 }
-.NameBox figcaption p span{
-    width: 25px;
-    color: #000000;
+.RestaurantArea .RestaurantBox  article h3{color:#000;font-size:24px;margin:0 0 10px 0;font-weight:800}
+.RestaurantArea .RestaurantBox  article h4{margin:0 0 10px 0;font-size:15px}
+.RestaurantArea .RestaurantBox  article h4 span{color:#2e2e2e}
+.RestaurantArea .RestaurantBox  article p{display:inline-block;margin:0 30px 0 0;font-size:15px;font-weight:600;color:#555}
+.RestaurantArea .RestaurantBox  article h6{font-size:16px;margin:10px 0 0 0}
+.RestaurantArea .RestaurantBox  article h6.Green{color:#16a50d}
+.RestaurantArea .RestaurantBox  aside{
+    width: calc(50% - 125px);
 }
-.NameBox figcaption p a{
-    color: #000000;
-}
-.NameBox figcaption p a:hover{
-    text-decoration: underline !important; 
-}
+.RestaurantArea .RestaurantBox  aside ol{margin: 0 0 15px;display: flex;}
+.RestaurantArea .RestaurantBox  aside ol li{display: inline-block;}
+.RestaurantArea .RestaurantBox  aside ol li button{outline: 0;background-color: #dddddd;min-width: 125px;padding: 10px 0;border: none;font-size: 13px;font-weight: 500;color: #404040;font-family: Poppins;cursor: pointer;}
+.RestaurantArea .RestaurantBox  aside ol li button.active{background: #0d4d89;color: #fff;}
+.RestaurantArea .RestaurantBox  aside ul li{display:inline-block;position:relative;padding:0 0 0 50px;margin:0 25px 20px 0}
+.RestaurantArea .RestaurantBox  aside ul li span{position:absolute;top:0;left:0;width:40px;height:40px;border:1px solid #ddd;border-radius:50%;padding:5px}
+.RestaurantArea .RestaurantBox  aside ul li h6{font-size:14px;color:#000;font-weight:700}
+.RestaurantArea .RestaurantBox  aside ul li p{color:#666565;font-weight:700;margin:0 0 3px 0;font-size:12px}
+.RestaurantArea .RestaurantBox  aside h3{background-color:#0d4d89;padding:10px 20px;border-radius:5px;color:#fff;font-size:18px;font-weight:600}
 
-.MenuBox{
-    overflow: auto;
-    position: relative;
-    display: block;
-}
 
-.MenuBox::-webkit-scrollbar {
-  width: 7px;
-  height: 8px;
-} 
+
+
+
+
+
+
+
+.FoodListArea{background-color:#f1f2f4;min-height:100vh;padding:30px 0}
+.FoodListArea .FoodContainer{max-width:1200px;margin:0 auto;display:flex;gap:15px;align-items:start}
+.FoodListArea .FoodNav{width:250px;background-color:#fff;position:sticky;top: 15px;}
+.FoodListArea .FoodNav .FoodNavHead{padding:15px 15px 0 15px}
+.FoodListArea .FoodNav .FoodNavHead h4{font-size:18px;color:#000}
+.FoodListArea .FoodNav .FoodNavHead h4 i{margin:0 5px 0 0}
+.FoodListArea .FoodNav .FoodNavBody{padding:15px}
+.FoodListArea .FoodNav .FoodNavBody ul li{border-bottom:1px solid #ddd}
+.FoodListArea .FoodNav .FoodNavBody ul li a{display:block;font-size:14px;color:#3e3e3e;font-weight:600;padding:9px 0}
+.FoodListArea .FoodNav .FoodNavBody ul li a span{float:right;width:20px;height:20px;background-color:#0d4d89;text-align:center;color:#fff;line-height:20px;border-radius:50px;font-size:12px}
+.FoodListArea .FoodNav .FoodNavBody ul li a:hover{color:#0d4d89}
+
+.FoodMenuArea{width:calc(100% - 600px);background-color:#fff;padding:15px}
+.FoodMenuArea .FoodMenuBox{margin:0 0 30px 0}
+.FoodMenuArea .FoodMenuBox:last-child{margin:0}
+.FoodMenuArea .FoodMenuBox h3{font-size:18px;font-weight:700;color:#000;margin:0 0 20px;border-bottom:2px solid #0d4d89;padding:0 0 15px 0}
+.FoodMenuArea .FoodMenuBox .FoodList{display:flex;flex-wrap:wrap;gap:10px}
+
+.MenuBox{width:calc(50% - 5px);border:1px solid #ddd;padding:10px}
+.MenuBox h4{font-size:15px;color:#000;margin:0 0 4px 0}
+.MenuBox p{font-size:13px;line-height:20px;font-weight:500;margin:0 0 10px 0;color:#666}
+.MenuBox aside{display:flex;justify-content:space-between;align-items:center}
+.MenuBox aside h6{font-size:14px;color:#0d4d89;font-weight:700}
+.MenuBox aside button{border:1px solid #ddd;padding:7px 15px;background-color:#fff0;font-weight:500;outline:0;border-radius:5px;font-size:12px;color:#383838;letter-spacing:.5px;font-family:Roboto}
+
+.FoodCheckout{width:350px;background-color:#fff;padding:13px;position:sticky;top: 0;transition: 0.5s all ease-in-out;}
+
+.CheckoutLocation{ /* border-bottom: 1px solid #ddd; */ /* padding: 0 0 15px 0; */ margin: 0 0 15px 0;}
+.CheckoutLocation h4{font-size: 18px;color: #000;margin: 0 0 15px 0;border-bottom: 1px solid #ddd;padding: 0 0 15px 0;}
+.CheckoutLocation h4 i{ margin:0 5px 0 0 }
+.CheckoutLocation h4 span{color: #0d4d89;}
+.CheckoutLocation ol{display: flex;gap: 15px;}
+.CheckoutLocation ol li{display: inline-block;}
+.CheckoutLocation ol li button{outline: 0;background-color: #fff;min-width: 125px;padding: 9px 0;border: 2px solid #ddd;font-size: 13px;font-weight: 600;color: #404040;font-family: Poppins;cursor: pointer;border-radius: 5px;}
+.CheckoutLocation ol li button i{margin: 0 5px 0 0;}
+.CheckoutLocation ol li button.active{background: #0d4d89;color: #fff;border-color: #0d4d89;}
+
+.CheckoutMenu{margin:0 0 15px 0}
+.CheckoutMenu ul{max-height: calc(100vh - 505px);overflow:auto;padding:0 10px 0 0}
+.CheckoutMenu ul::-webkit-scrollbar{width:5px;height:8px}
+.CheckoutMenu ul::-webkit-scrollbar-track{background:#fff;border-radius:0}
+.CheckoutMenu ul::-webkit-scrollbar-thumb{background:#0c4c8a;border-radius:0}
+.CheckoutMenu ul li{display:flex;align-items:start;border-bottom:1px solid #ddd;padding:0 0 15px 0;margin:0 0 15px 0}
+.CheckoutMenu ul li:last-child{border:none;padding:0;margin:0}
+.CheckoutMenu ul li article h4{font-size:15px;color:#000;margin:0 0 4px 0}
+.CheckoutMenu ul li article p{font-size:13px;line-height:20px;font-weight:500;margin:0 0 7px 0;color:#666}
+.CheckoutMenu ul li article h6{font-size:14px;color:#0d4d89;font-weight:700}
+.CheckoutMenu ul li aside{border:1px solid #ddd;padding:8px;border-radius:6px;min-width:80px}
+.CheckoutMenu ul li aside button{width:16px;height:16px;background:#fff0;border:none;font-size:11px;cursor: pointer;}
+.CheckoutMenu ul li aside span{color:#0d4d89;font-weight:700;font-size:15px;min-width:20px;display:inline-block;text-align:center}
+
+.FoodInformation{border-top:1px solid #ddd;padding:15px 0 0 0}
+.FoodInformation article{margin:0 0 15px 0}
+.FoodInformation article h5{font-size:14px;color:#1a578f;font-weight:700;margin:0 0 10px 0}
+.FoodInformation article h5 span{float:right}
+.FoodInformation article h6{font-size:14px;color:#000;font-weight:700;margin:0;border-top:1px solid #ddd;padding:10px 0 0 0}
+.FoodInformation article h6 span{float:right}
+.FoodInformation aside{background-color:#f1f2f4;padding:10px;margin:0 0 15px 0;border-radius:5px}
+.FoodInformation aside p{font-size:13px;font-weight:700;color:#3a3838;margin:0 0 10px 0;line-height:20px;letter-spacing:.5px}
+.FoodInformation aside textarea{width:100%;border:1px solid #ddd;border-radius:6px;resize:none;padding:10px;outline:0;font-size:14px}
+.FoodInformation button{width:100%;outline:0;padding:10px 0;border:none;background:#1a578f;color:#fff;font-weight: 700;border-radius:5px;font-size:15px;font-family: 'Mulish';}
+
+footer .FooterArea{padding:40px 0;background:#2e2e2e;color:#d6cfcf}
+footer .FooterArea .Footers{max-width:1200px;margin:0 auto;display:flex;gap:15px}
+footer .FooterArea .Footers .Foots{width:25%}
+footer .FooterArea .Footers .Foots h4{color:#fff;font-weight:700;font-size:18px;margin-bottom:15px}
+footer .FooterArea .Footers .Foots p{font-size:14px;font-weight:700;margin:0 0 10px 0}
+footer .FooterArea .Footers .Foots p a{color:#d6cfcf;text-decoration:underline}
+footer .FooterArea .Footers .Foots p a:hover{color:#fff}
+footer .FooterArea .Footers .Foots ul li{font-size:14px;margin:0 0 10px 0}
+footer .FooterArea .Footers .Foots ul li label{font-weight:700;min-width:100px;display:inline-block}
+footer .Copyright{background:#181818;color:#ccc;padding:14px 0}
+footer .Copyright .CopyrightBox p{font-size:13px;text-align:center;font-weight:500}    
+    
+  
+.CheckoutBox{width:calc(100% - 350px);background-color:#fff;padding:40px}
+
+.CheckSign{margin:0 0 30px 0}
+.CheckSign h3{font-size:22px;color:#000;margin:0 0 15px 0;text-transform:uppercase;letter-spacing:.5px;font-weight:800;letter-spacing:1px}
+.CheckSign p{font-size:14px;line-height:20px;font-weight:600;color:#666}
+.CheckSign p a{padding:10px 20px;background:#1a578f;color:#fff;font-weight:700;font-size:14px;font-family:'Mulish';border-radius:50px;margin:0 0 0 5px}
+
+.CheckoutBox .PersonalBox{margin:0 0 30px 0}
+.CheckoutBox .PersonalBox h4{font-size:18px;font-weight:700;color:#000;margin:0 0 30px;border-bottom:2px solid #0d4d89;padding:0 0 15px 0}
+.PersonalBox .CheckoutForm{display:flex;flex-wrap:wrap;gap:15px}
+.PersonalBox .CheckoutForm .FormBox{width:calc(50% - 8px)}
+.PersonalBox .CheckoutForm .FormBox .form-group label{display:block;color:#000;font-size:14px;font-weight:700;margin:0 0 10px 0;letter-spacing:.3px}
+.PersonalBox .CheckoutForm .FormBox .form-group .form-control{border:1px solid #d1d1d1;padding:15px;height:auto;font-size:14px;color:#000;width:100%;background:#f1f2f4;border-radius:5px;outline:0;font-weight:700;font-family:'Mulish'}
+
+.PickupTime .PickupBox{width:calc(50% - 8px)}
+.PickupTime .PickupBox article{border:1px solid #1a578f;padding:20px 20px 20px 80px;border-radius:5px;margin:0 0 20px 0;background:#f1f2f4}
+.PickupTime .PickupBox article .Icon{position:absolute;top:20px;left:20px}
+.PickupTime .PickupBox article h4{font-size:16px;font-weight:700;color:#000;margin:0 0 5px 0}
+.PickupTime .PickupBox article p{font-size:14px;line-height:20px;font-weight:600;margin:0 0 5px 0;color:#666}
+.PickupTime .PickupBox article input{border:1px solid #d1d1d1;padding:12px 15px;height:auto;font-size:14px;color:#000;width:100%;background:#fff;border-radius:5px;outline:0;font-weight:600;font-family:'Mulish'}
+.PickupTime .PickupBox aside{margin:0 0 20px 0;display:flex;gap:15px}
+.PickupTime .PickupBox button{width:100%;outline:0;padding:12px 0;background:#f1f2f4;color:#000;font-weight:700;border-radius:50px;font-size:14px;font-family:'Mulish';border:2px solid #1a578f}
+.PickupTime .PickupBox button.active{background-color:#1a578f;color:#fff}
+
+.BasketBox{position:fixed;bottom:20px;right:20px;display:none;z-index:1}
+.BasketBox button{width:50px;height:50px;background-color:#0d4d89;border:none;color:#fff;font-size:16px;border-radius:50%}    
+    
+    
+    
+    
  
-.MenuBox::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 20px;
-}
-   
-.MenuBox::-webkit-scrollbar-thumb {
-  background: #0c4c8a;
-  border-radius: 10px;
-}
 
-.MenuBox ul{
-    display: flex;
-    gap: 5px;
-    width: max-content;
-    padding: 10px 0;
-}
-.MenuBox ul li{
-    padding: 5px;
-}
-.MenuBox ul li button{
-    min-width: 120px;
-    border: none;
-    background-color: transparent;
-    box-shadow: 0 3px 15px 0 rgb(93 72 223 / 8%);
-    border-radius: 10px;
-    padding: 10px 0;
-    display: block;
-}
-.MenuBox ul li button .Icon{
-    display: inline-block;
-    max-width: 30px;
-}
-.MenuBox ul li button .Icon img{}
-.MenuBox ul li button label{
-    margin: 6px 0 0 0;
-    display: block;
-    font-size: 12px;
-}
+
+
+
+
+
+
 
 
 
