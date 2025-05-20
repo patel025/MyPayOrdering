@@ -129,7 +129,7 @@ p { margin: 0; padding: 0; }
 input[type=date].form-control{ text-transform: uppercase !important; }
 select{cursor: pointer;outline: 0;}
 
-.RestaurantArea{padding:20px 0 25px}
+/*.RestaurantArea{padding:20px 0 25px}
 .RestaurantArea .RestaurantBox{max-width:1200px;margin:0 auto;display:flex;gap:15px;align-items:center}
 .RestaurantArea .RestaurantBox .RestaurantImage{width:220px;line-height:0;overflow:hidden;border-radius:10px}
 .RestaurantArea .RestaurantBox .RestaurantImage img{max-height:170px;width:100%;object-fit:cover}
@@ -152,11 +152,11 @@ select{cursor: pointer;outline: 0;}
 .RestaurantArea .RestaurantBox .RestaurantInfo aside ul li h6{font-size:14px;color:#000;font-weight:700}
 .RestaurantArea .RestaurantBox .RestaurantInfo aside ul li p{color:#666565;font-weight:700;margin:0 0 3px 0;font-size:12px}
 .RestaurantArea .RestaurantBox .RestaurantInfo aside h3{background-color:#0d4d89;padding:10px 20px;border-radius:5px;color:#fff;font-size:18px;font-weight:600}
+*/
 
-
-.RestaurantArea{padding:20px 0 25px}
-.RestaurantArea .RestaurantBox{max-width:1200px;margin:0 auto;display:flex;gap:15px;align-items:center}
-.RestaurantArea .RestaurantBox figure{width:220px;line-height:0;overflow:hidden;border-radius:10px}
+.RestaurantArea{padding: 20px 20px 20px;}
+.RestaurantArea .RestaurantBox{/* max-width:1200px; */margin:0 auto;display:flex;gap:15px;align-items:center}
+.RestaurantArea .RestaurantBox figure{width: 350px;line-height:0;overflow:hidden;border-radius:10px}
 .RestaurantArea .RestaurantBox figure img{max-height:170px;width:100%;object-fit:cover}
 
 /*.RestaurantArea .RestaurantBox {width:calc(100% - 220px);display:flex;justify-content:space-between;gap:15px}*/
